@@ -1,3 +1,104 @@
 <resources>
-    <string name="app_name">GestorArchivos</string>
+    <string name="app_name">Gestor de Archivos</string>
+
+    <!-- Permisos -->
+    <string name="permission_required">Se requieren permisos de almacenamiento</string>
+    <string name="permission_denied">Permisos de almacenamiento denegados</string>
+    <string name="permission_rationale">Esta aplicación necesita acceso al almacenamiento para explorar y gestionar tus archivos</string>
+
+    <!-- Navegación -->
+    <string name="navigate_back">Volver</string>
+    <string name="navigate_up">Subir</string>
+
+    <!-- Acciones de archivo -->
+    <string name="open">Abrir</string>
+    <string name="open_with">Abrir con…</string>
+    <string name="share">Compartir</string>
+    <string name="rename">Renombrar</string>
+    <string name="delete">Eliminar</string>
+    <string name="copy">Copiar</string>
+    <string name="move">Mover</string>
+    <string name="details">Detalles</string>
+    <string name="add_to_favorites">Agregar a favoritos</string>
+    <string name="remove_from_favorites">Quitar de favoritos</string>
+
+    <!-- Diálogos -->
+    <string name="delete_confirmation">¿Eliminar este archivo?</string>
+    <string name="delete_folder_confirmation">¿Eliminar esta carpeta y todo su contenido?</string>
+    <string name="confirm">Confirmar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="ok">Aceptar</string>
+
+    <!-- Crear carpeta -->
+    <string name="create_folder">Crear carpeta</string>
+    <string name="folder_name">Nombre de la carpeta</string>
+    <string name="create">Crear</string>
+
+    <!-- Errores -->
+    <string name="error_loading_directory">Error al cargar el directorio</string>
+    <string name="error_opening_file">Error al abrir el archivo</string>
+    <string name="error_deleting_file">Error al eliminar el archivo</string>
+    <string name="error_renaming_file">Error al renombrar el archivo</string>
+    <string name="error_creating_folder">Error al crear la carpeta</string>
+    <string name="error_no_app_available">No hay aplicaciones disponibles para abrir este archivo</string>
+
+    <!-- Mensajes -->
+    <string name="folder_empty">Esta carpeta está vacía</string>
+    <string name="no_recent_files">No hay archivos recientes</string>
+    <string name="no_favorites">No hay favoritos</string>
+    <string name="search_hint">Buscar archivos…</string>
+
+    <!-- Ordenamiento -->
+    <string name="sort_by">Ordenar por</string>
+    <string name="sort_name_asc">Nombre (A-Z)</string>
+    <string name="sort_name_desc">Nombre (Z-A)</string>
+    <string name="sort_size_asc">Tamaño (menor a mayor)</string>
+    <string name="sort_size_desc">Tamaño (mayor a menor)</string>
+    <string name="sort_date_asc">Fecha (antigua a reciente)</string>
+    <string name="sort_date_desc">Fecha (reciente a antigua)</string>
+    <string name="sort_type">Tipo</string>
+
+    <!-- Vista -->
+    <string name="view_list">Vista de lista</string>
+    <string name="view_grid">Vista de cuadrícula</string>
+
+    <!-- Configuración -->
+    <string name="settings">Configuración</string>
+    <string name="theme">Tema</string>
+    <string name="theme_guinda">Guinda (IPN)</string>
+    <string name="theme_azul">Azul (ESCOM)</string>
+    <string name="show_hidden_files">Mostrar archivos ocultos</string>
+    <string name="hide_hidden_files">Ocultar archivos ocultos</string>
+
+    <!-- Tipos de archivo -->
+    <string name="file_type_directory">Carpeta</string>
+    <string name="file_type_image">Imagen</string>
+    <string name="file_type_text">Texto</string>
+    <string name="file_type_json">JSON</string>
+    <string name="file_type_xml">XML</string>
+    <string name="file_type_video">Video</string>
+    <string name="file_type_audio">Audio</string>
+    <string name="file_type_pdf">PDF</string>
+    <string name="file_type_archive">Archivo comprimido</string>
+    <string name="file_type_apk">APK</string>
+    <string name="file_type_unknown">Desconocido</string>
+
+    <!-- Detalles de archivo -->
+    <string name="file_name">Nombre</string>
+    <string name="file_type">Tipo</string>
+    <string name="file_size">Tamaño</string>
+    <string name="file_path">Ruta</string>
+    <string name="file_modified">Última modificación</string>
+    <string name="file_permissions">Permisos</string>
+    <string name="file_extension">Extensión</string>
+
+    <!-- Permisos de archivo -->
+    <string name="permission_read">Lectura</string>
+    <string name="permission_write">Escritura</string>
+    <string name="permission_none">Sin permisos</string>
+
+    <!-- Selección múltiple -->
+    <string name="selected_items">%1$d seleccionado(s)</string>
+    <string name="select_all">Seleccionar todo</string>
+    <string name="deselect_all">Deseleccionar todo</string>
 </resources>

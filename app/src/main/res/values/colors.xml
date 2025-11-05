@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Colores base -->
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
@@ -7,4 +8,16 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Tema Guinda (IPN) -->
+    <color name="guinda_primary">#6D1F3C</color>
+    <color name="guinda_secondary">#8E2442</color>
+    <color name="guinda_light">#9B2D4F</color>
+    <color name="guinda_dark">#5E0020</color>
+
+    <!-- Tema Azul (ESCOM) -->
+    <color name="azul_primary">#0D47A1</color>
+    <color name="azul_secondary">#1565C0</color>
+    <color name="azul_light">#1976D2</color>
+    <color name="azul_dark">#003258</color>
 </resources>
