@@ -16,9 +16,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.gestorarchivos.model.FileType
-import com.example.gestorarchivos.ui.screens.FileExplorerScreen
-import com.example.gestorarchivos.ui.screens.ImageViewer
-import com.example.gestorarchivos.ui.screens.TextFileViewer
+import com.example.gestorarchivos.ui.screens.*
 import com.example.gestorarchivos.ui.theme.GestorArchivosTheme
 import com.example.gestorarchivos.util.PermissionUtils
 import com.example.gestorarchivos.viewmodel.FileExplorerViewModel
@@ -87,7 +85,7 @@ fun AppNavigation(viewModel: FileExplorerViewModel) {
 
     NavHost(
         navController = navController,
-        startDestination = "file_explorer"
+        startDestination = "file_explorer" // Cambiar a "bluetooth" si quieres que inicie en Bluetooth
     ) {
         composable("file_explorer") {
             FileExplorerScreen(
@@ -107,6 +105,19 @@ fun AppNavigation(viewModel: FileExplorerViewModel) {
                             // No debería llegar aquí
                         }
                     }
+                },
+                // AGREGAR NAVEGACIÓN A BLUETOOTH
+                onNavigateToBluetooth = {
+                    navController.navigate("bluetooth")
+                }
+            )
+        }
+
+        // AGREGAR RUTA DE BLUETOOTH
+        composable("bluetooth") {
+            BluetoothNavigationScreen(
+                onNavigateToFileManager = {
+                    navController.navigate("file_explorer")
                 }
             )
         }
