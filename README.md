@@ -46,7 +46,7 @@ El sistema ofrece una interfaz de comandos que permite interactuar con el almace
 2. **Compilar el proyecto:**
 `javac *.java`
 
-3. **Ejecutar:
+3. **Ejecutar:**
 `java Main`
 ## 👤 Autor
 Desarrollado por Gael Márquez y Brandon Trejo.
