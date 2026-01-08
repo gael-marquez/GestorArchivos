@@ -41,15 +41,12 @@ El sistema ofrece una interfaz de comandos que permite interactuar con el almace
 ## 💻 Instalación y Uso
 
 1. **Clonar el repositorio:**
-   ```bash
-   git clone [https://github.com/gael-marquez/GestorArchivos.git](https://github.com/gael-marquez/GestorArchivos.git)
+   `git clone [https://github.com/gael-marquez/GestorArchivos.git](https://github.com/gael-marquez/GestorArchivos.git)`
 
 2. **Compilar el proyecto:**
-```bash
-javac *.java
+`javac *.java`
 
 3. **Ejecutar:
-```bash
-java Main
+`java Main`
 ## 👤 Autor
 Desarrollado por Gael Márquez y Brandon Trejo.
