@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+
     kotlin("kapt")
 }
 
@@ -54,12 +55,12 @@ android {
         }
     }
 }
-
 dependencies {
     // Core Android
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.11.0")
+    implementation(libs.androidx.glance)
 
     // Jetpack Compose - VERSIONES SINCRONIZADAS
     val composeBomVersion = "2023.10.01"
@@ -98,6 +99,30 @@ dependencies {
     // DataStore
     implementation("androidx.datastore:datastore-preferences:1.0.0")
 
+    // ========== NUEVAS DEPENDENCIAS PARA BLUETOOTH ==========
+
+    // WorkManager para transferencias en segundo plano
+    implementation("androidx.work:work-runtime-ktx:2.9.0")
+
+    // Corrutinas adicionales para operaciones de red/archivo
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
+
+    // Para notificaciones de transferencia
+    implementation("androidx.core:core-ktx:1.12.0") // Ya tienes esta
+
+    // Para manejo de archivos y permisos
+    implementation("androidx.documentfile:documentfile:1.0.1")
+
+    // Para cifrado de archivos (opcional pero recomendado)
+    implementation("androidx.security:security-crypto:1.1.0-alpha06")
+
+    // Para mejor manejo de estados de UI
+    implementation("androidx.compose.runtime:runtime-livedata:1.5.4")
+
+    // Para animaciones avanzadas en transferencias
+    implementation("androidx.compose.animation:animation-graphics:1.5.4")
+
     // Testing
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
@@ -106,4 +131,10 @@ dependencies {
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
+
+    // ========== TESTING PARA BLUETOOTH ==========
+    testImplementation("org.mockito:mockito-core:5.8.0")
+    testImplementation("org.mockito.kotlin:mockito-kotlin:5.2.1")
+    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.3")
+    androidTestImplementation("androidx.work:work-testing:2.9.0")
 }

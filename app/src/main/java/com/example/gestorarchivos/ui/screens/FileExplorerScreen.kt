@@ -31,7 +31,8 @@ import kotlinx.coroutines.launch
 @Composable
 fun FileExplorerScreen(
     viewModel: FileExplorerViewModel = viewModel(),
-    onNavigateToViewer: (FileItem) -> Unit
+    onNavigateToViewer: (FileItem) -> Unit,
+    onNavigateToBluetooth: () -> Unit = {}
 ) {
     val uiState by viewModel.uiState.collectAsState()
     val context = LocalContext.current
@@ -98,6 +99,13 @@ fun FileExplorerScreen(
                                 "Cambiar vista"
                             )
                         }
+                        IconButton(onClick = onNavigateToBluetooth) {
+                            Icon(
+                                Icons.Default.Bluetooth,
+                                contentDescription = "Bluetooth"
+                            )
+                        }
+
 
                         // Menú
                         IconButton(onClick = { showMenu = true }) {
